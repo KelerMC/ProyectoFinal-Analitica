@@ -402,7 +402,7 @@ with col2:
     st.markdown('</div>', unsafe_allow_html=True)
 
 # Insights adicionales
-st.markdown("### 📈 Componentes del Modelo")
+st.markdown("###  Componentes del Modelo")
 
 col1, col2, col3 = st.columns(3)
 
