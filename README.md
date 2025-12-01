@@ -181,6 +181,4 @@ pip install -r requirements.txt
 streamlit run app_streamlit.py
 ```
 
-## Contacto
 
-Para consultas sobre este proyecto, contactar a cualquier miembro del Grupo 8.
