@@ -1,0 +1,107 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+.virtual_documents
+
+# VS Code
+.vscode/
+*.code-workspace
+.history/
+
+# PyCharm
+.idea/
+*.iml
+
+# Streamlit
+.streamlit/secrets.toml
+.streamlit/config.toml
+
+# Data Files (comentar si quieres subir algunos)
+*.parquet
+*.csv
+*.xlsx
+*.xls
+Data/*.parquet
+Data/*.csv
+# Descomentar si quieres ignorar TODOS los datos:
+# Data/
+
+# Modelos entrenados
+*.pkl
+*.joblib
+*.h5
+*.model
+
+# Logs
+*.log
+logs/
+*.out
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+*~
+
+# Spark
+metastore_db/
+spark-warehouse/
+derby.log
+
+# Python cache
+*.pyc
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Temporary files
+*.tmp
+*.temp
+tmp/
+temp/
+
+# Large files
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Environment variables
+.env
+.env.local
+.env.*.local
