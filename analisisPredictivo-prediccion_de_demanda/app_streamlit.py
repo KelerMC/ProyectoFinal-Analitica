@@ -62,7 +62,7 @@ def load_data():
     """Cargar datos desde CSV o Parquet"""
     try:
         # Intentar cargar desde CSV de pronóstico si existe
-        df_forecast = pd.read_csv('Data/pronostico_trimestral.csv')
+        df_forecast = pd.read_csv('../Data/pronostico_trimestral.csv')
         df_forecast['Fecha'] = pd.to_datetime(df_forecast['Fecha'])
         return df_forecast, True
     except:
@@ -74,7 +74,7 @@ def load_historical_data():
     try:
         # Aquí puedes cargar el archivo parquet o CSV con datos históricos
         import pyarrow.parquet as pq
-        df = pq.read_table('Data/olist_unified_dataset.parquet').to_pandas()
+        df = pq.read_table('../Data/olist_unified_dataset.parquet').to_pandas()
         
         # Preparar datos de series de tiempo
         df_ts = df[['order_purchase_timestamp', 'payment_value']].copy()
@@ -227,7 +227,7 @@ with st.sidebar:
     
     # Opción para cargar métricas
     try:
-        metrics_df = pd.read_csv('Data/metricas_modelo_demanda.csv')
+        metrics_df = pd.read_csv('../Data/metricas_modelo_demanda.csv')
         for _, row in metrics_df.iterrows():
             if 'R$' in row['Métrica']:
                 st.metric(row['Métrica'], f"R$ {row['Valor']:,.2f}")
